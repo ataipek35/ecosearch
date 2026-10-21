@@ -2,6 +2,10 @@
 
 EcoSearch is a mobile search and comparison application built with Flutter that estimates the environmental impact of everyday consumer products and recommends certified, lower-carbon alternatives.
 
+## 👥 Group Details (Group 23)
+* **Course:** CS310 Mobile Application Development
+* **Framework:** Flutter (Dart)
+* **Assigned TA:** Zenia Mazhar
 ---
 
 ### Team Members
