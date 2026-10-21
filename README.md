@@ -15,14 +15,14 @@ EcoSearch is a mobile search and comparison application built with Flutter that 
 * **Problem:** Consumers want to purchase sustainable everyday items but face greenwashing, complex ingredient/certification details, and fragmented comparison processes across categories.
 * **Solution:** EcoSearch bridges this gap by combining automated eco-impact estimation, verified eco-certifications, and clear alternatives into a single mobile workflow.
 * **Target Audience:** Urban consumers aged 18–40, students, and conscious shoppers.
-* **Scope Limit (MVP):** Three distinct product categories:
+* **Scope Limit :** Three distinct product categories:
   1. Liquid soaps & chemical detergents
   2. T-shirts (apparel)
   3. Packaged foods
 
 ---
 
-## 🚀 Core Features (MVP)
+## Core Features
 The application operates through an end-to-end flow: **Search ➔ Analyze ➔ Compare Alternatives ➔ Save**.
 
 1. **Multi-Modal Product Input:**
