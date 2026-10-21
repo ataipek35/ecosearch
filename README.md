@@ -44,7 +44,7 @@ The application operates through an end-to-end flow: **Search ➔ Analyze ➔ Co
    * Step-by-step reasoning explaining exactly why each recommended alternative is more sustainable.
 
 6. **Local Storage & Offline Support:**
-   * Favorites and search history stored locally on the device.
+   * Favorites and search history stored locally on the device (via Hive or SQLite/drift).
    * Multi-language support (Turkish / English) and light/dark theme options.
 
 ---
@@ -54,3 +54,12 @@ The application operates through an end-to-end flow: **Search ➔ Analyze ➔ Co
 * **Local Persistence:** Hive / SQLite (stores search history, favorites, settings; does not store user photos).
 * **External APIs:** Open Food Facts & Open Products Facts (for barcode metadata).
 * **Backend & AI Layer:** Thin API layer (Firebase Cloud Functions / FastAPI) managing prompt construction, rate limits, RAG vector retrieval (pgvector), and multimodal LLM inference.
+
+---
+
+## ⚠️ Potential Challenges & Mitigations
+* **Data Gaps:** If a barcode is missing from open databases, users can fall back to text search or capture a label photo.
+* **Model Accuracy & Hallucinations:** Recommendations are strictly anchored to verified eco-label databases via RAG, and impact metrics are labeled as estimates.
+* **Photo & OCR Quality:** If an uploaded label image is blurry, the app prompts the user to retake the photo or edit parsed text manually.
+* **Inference Latency:** Frequently queried products and common alternatives are cached locally to ensure real-time UI performance.
+* **Scope Management:** The project strictly limits development to three predefined categories to guarantee delivery within the semester.
