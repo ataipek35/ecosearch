@@ -10,7 +10,7 @@ EcoSearch is a mobile search and comparison application built with Flutter that 
 
 ### Team Members
 * **Ata İpek** – 34452
-* **Zeynep Taşkın** – [Student ID]
+* **Zeynep Taşkın** – 33851
 * **Hakan Osman Taşkın** – 22606
 
 ---
@@ -38,14 +38,14 @@ The application operates through an end-to-end flow: **Search ➔ Analyze ➔ Co
    * Approximate ranges for estimated carbon footprint and plastic packaging waste.
 
 3. **Verified Certified Alternatives:**
-   * Recommends 3 certified greener alternatives retrieved from an official certification database via RAG.
+   * Recommends certified greener alternatives retrieved from an official certification database via RAG.
    * Recognizes EU Ecolabel, FSC, Fairtrade, and Energy Star standards.
 
 4. **Impact Scorecard:**
-   * Side-by-side comparison displaying the current product's score against 3 alternative cards (including approximate price, savings score, and official certification badges).
+   * Side-by-side comparison displaying the current product's score against alternative cards (including approximate price, savings score, and official certification badges).
 
-5. **Chain-of-Thought Reasoning:**
-   * Step-by-step reasoning explaining exactly why each recommended alternative is more sustainable.
+5. ** Reasoning:**
+   * Explaining exactly why each recommended alternative is more sustainable.
 
 6. **Local Storage & Offline Support:**
    * Favorites and search history stored locally on the device (via Hive or SQLite/drift).
