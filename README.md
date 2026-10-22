@@ -65,5 +65,5 @@ The application operates through an end-to-end flow: **Search ➔ Analyze ➔ Co
 * **Data Gaps:** If a barcode is missing from open databases, users can fall back to text search or capture a label photo.
 * **Model Accuracy & Hallucinations:** Recommendations are strictly anchored to verified eco-label databases via RAG, and impact metrics are labeled as estimates.
 * **Photo & OCR Quality:** If an uploaded label image is blurry, the app prompts the user to retake the photo or edit parsed text manually.
-* **Inference Latency:** Frequently queried products and common alternatives are cached locally to ensure real-time UI performance.
+* **Inference Latency:** Frequently searched products and common alternatives are cached locally to ensure real-time UI performance.
 * **Scope Management:** The project strictly limits development to three predefined categories to guarantee delivery within the semester.
