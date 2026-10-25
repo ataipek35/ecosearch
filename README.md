@@ -45,14 +45,15 @@ The application operates through an end-to-end flow: **Search ➔ Analyze ➔ Co
 5. **Local Storage & Offline Support:**
    * Favorites and search history stored locally on the device (via Hive or SQLite/drift).
    * Multi-language support (Turkish / English) and light/dark theme options.
-6.**Planned if time permits:**
-  * Verified certified alternatives retrieved from EU Ecolabel records via RAG, starting with one category.
+
+6. **Planned if time permits:**
+   * Verified certified alternatives retrieved from EU Ecolabel records via RAG, starting with one category.
 ---
 
 ## 🛠️ Data & Architecture
 * **Frontend:** Flutter (Dart) targeting Android.
 * **Local Persistence:** Hive / SQLite (stores search history, favorites, cached results, settings; does not store user photos).
-* **External APIs:** Open Food Facts & Open Products Facts (for barcode and product metadata). EU Ecolabel records as the certification knowledge base (vector database, e.g., pgvector, for RAG) in the later phase.
+* **External APIs:** Open Food Facts & Open Products Facts (for barcode and product metadata). EU Ecolabel records as the certification knowledge base in the later phase.
 * **Backend & AI Layer:** Thin API layer (Firebase Cloud Functions / FastAPI) managing product data fetching, prompt construction, rate limits, and text-based LLM inference. AI keys stay on the backend, never in the client. Results return as JSON.
 
 ---
