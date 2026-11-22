@@ -15,6 +15,21 @@ EcoSearch is a mobile search and comparison application built with Flutter that 
 
 ---
 
+ 
+## 🧩 Project Step 2.2 – How to Run
+### Flutter Version
+* **Flutter:** 3.47.5 (stable)
+* **Dart:** 3.13.4
+### Run Instructions
+```bash
+git clone https://github.com/ataipek35/ecosearch.git
+cd ecosearch
+flutter pub get
+flutter run              # an Android emulator or iOS simulator must be running
+```
+ 
+---
+
 ## 📱 App Overview & Problem Addressed
 * **Problem:** Consumers want to purchase sustainable everyday items but face dense ingredient/certification details and the time needed to compare alternatives. Existing apps mostly give a score without alternatives.
 * **Solution:** EcoSearch bridges this gap by combining eco-impact estimation, alternatives, and an AI-written explanation into a single mobile workflow. In a later phase, alternatives are matched against verified EU Ecolabel records.
