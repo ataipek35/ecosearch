@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-
 import '../core/app_routes.dart';
 import '../core/app_spacing.dart';
 import '../core/app_text_styles.dart';
 import 'custom_buttons.dart';
 
-/// Simple confirmation dialog. Returns true when the user confirms.
 Future<bool> showConfirmDialog(
   BuildContext context, {
   required String title,
@@ -33,9 +31,6 @@ Future<bool> showConfirmDialog(
   return result ?? false;
 }
 
-/// "Cancel analysis?" dialog from the Figma page ("Cancel analysis
-/// confirmation"). Used by the analysis screen. On "Yes, cancel analysis" the
-/// app returns to product search (the home screen).
 Future<void> confirmCancelAnalysis(BuildContext context) async {
   final scheme = Theme.of(context).colorScheme;
   final confirmed = await showDialog<bool>(
