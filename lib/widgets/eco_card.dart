@@ -2,13 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../core/app_spacing.dart';
 
-/// Rounded Card used for list items and grouped content.
-///
-/// - default:   "surface" fill, no border
-/// - outlined:  "field" fill (white in light mode) with an outline border
-/// - [color] / [borderColor] override the fill and the border when a screen
-///   needs a different combination (e.g. tonal border on search results).
-/// - highlighted: primary-colored border (selected card)
 class EcoCard extends StatelessWidget {
   final Widget child;
   final VoidCallback? onTap;
