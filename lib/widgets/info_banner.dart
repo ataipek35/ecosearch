@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
-
 import '../core/app_spacing.dart';
 import '../core/app_text_styles.dart';
 
-/// Information box with an optional leading icon.
-/// Tonal green by default; pass [muted] for the quieter surface variant
-/// (scan, analysis, settings and alternative screens).
 class InfoBanner extends StatelessWidget {
   final String text;
   final IconData? icon;
