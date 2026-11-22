@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-
 import '../core/app_text_styles.dart';
 
-/// Small pill showing "78/100".
 class ScoreChip extends StatelessWidget {
   final int score;
 
