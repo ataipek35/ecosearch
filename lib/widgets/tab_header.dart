@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-
 import '../core/app_routes.dart';
 import '../core/app_spacing.dart';
 import '../core/app_text_styles.dart';
 
-/// Header used on the three tab screens and the search results: icon + title
-/// on the left, round profile button on the right.
 class TabHeader extends StatelessWidget {
   final IconData icon;
   final String title;
