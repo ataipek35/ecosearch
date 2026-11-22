@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../core/app_spacing.dart';
 import '../core/app_text_styles.dart';
 import '../models/product.dart';
@@ -8,7 +7,6 @@ import 'eco_card.dart';
 import 'icon_badge.dart';
 import 'score_chip.dart';
 
-/// Search result card: icon, name, subtitle and "Select to analyze".
 class ProductResultCard extends StatelessWidget {
   final Product product;
   final VoidCallback onAnalyze;
@@ -67,8 +65,6 @@ class ProductResultCard extends StatelessWidget {
   }
 }
 
-/// Alternative card used on the Scorecard screen (Figma "Analysis-1/2").
-/// Tapping the card selects it; the round arrow button opens the details.
 class AlternativeCard extends StatelessWidget {
   final Product product;
   final bool highlighted;
@@ -197,7 +193,6 @@ class AlternativeCard extends StatelessWidget {
   }
 }
 
-/// Local asset image with a safe fallback.
 class ProductImage extends StatelessWidget {
   final String? asset;
   final double size;
