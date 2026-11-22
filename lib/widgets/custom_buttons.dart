@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-
 import '../core/app_spacing.dart';
 import '../core/app_text_styles.dart';
 
-/// Filled dark-green button (uses the shared elevatedButtonTheme).
 class PrimaryButton extends StatelessWidget {
   final String label;
   final VoidCallback? onPressed;
@@ -45,7 +43,6 @@ class PrimaryButton extends StatelessWidget {
   }
 }
 
-/// Light-green tonal button ("Continue without signing in", "Scan barcode").
 class TonalButton extends StatelessWidget {
   final String label;
   final VoidCallback? onPressed;
@@ -85,13 +82,11 @@ class TonalButton extends StatelessWidget {
   }
 }
 
-/// White outlined button ("Sign in with Google", "Sign out").
 class OutlinedPillButton extends StatelessWidget {
   final String label;
   final VoidCallback? onPressed;
   final IconData? icon;
 
-  /// Custom leading widget (e.g. the Google "G"); wins over [icon].
   final Widget? leading;
 
   const OutlinedPillButton({
@@ -136,7 +131,6 @@ class OutlinedPillButton extends StatelessWidget {
   }
 }
 
-/// Small text-only link button ("Forgot password?", "View history").
 class LinkText extends StatelessWidget {
   final String label;
   final VoidCallback onPressed;
