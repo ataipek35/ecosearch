@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// Bottom navigation bar shared by the home shell and the screens that keep
-/// the tabs visible (results, scorecard, product not found).
 class AppBottomNav extends StatelessWidget {
   final int selectedIndex;
   final ValueChanged<int> onSelected;
