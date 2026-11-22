@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
 import '../core/app_spacing.dart';
 import '../core/app_text_styles.dart';
 
-/// Label + TextFormField with inline validation and optional password toggle.
 class AppTextField extends StatefulWidget {
   final String label;
   final String hint;
