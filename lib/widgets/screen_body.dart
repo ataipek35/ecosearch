@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-
 import '../core/app_spacing.dart';
 
-/// Scrollable, centered, width-limited body. Prevents overflow on small
-/// screens (scrolls) and keeps content readable on large ones (max width).
 class ScreenBody extends StatelessWidget {
   final List<Widget> children;
   final CrossAxisAlignment crossAxisAlignment;
