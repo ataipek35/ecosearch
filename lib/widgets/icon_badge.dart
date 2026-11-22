@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// Rounded square icon holder used in lists (surface fill, primary icon).
 class IconBadge extends StatelessWidget {
   final IconData icon;
   final double size;
